@@ -1,5 +1,6 @@
 ---
 - name: ansible custom roles playbook
+  hosts: all
   become: yes
   remote_user: ansible
   roles:
