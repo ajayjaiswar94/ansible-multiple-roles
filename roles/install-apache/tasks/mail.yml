@@ -1,0 +1,13 @@
+---
+- name: install the apache
+  become: yes
+  apt:
+    name: apache2
+    state: lastest
+    update_cache: yes
+
+- name: start the apache services
+  become: yes
+  service:
+    name: lightttpd
+    state: started

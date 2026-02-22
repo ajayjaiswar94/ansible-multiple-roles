@@ -1,0 +1,7 @@
+---
+- name: ansible custom roles playbook
+  become: yes
+  remote_user: ansible
+  roles:
+    - custom-roles
+    - install-apache
